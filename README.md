@@ -132,23 +132,10 @@ safely parse stdout as JSON.
 | Cleaned phrase over the limit | `error: phrase is too long: 152 (max 150)` | 1 |
 | Missing phrase, or invalid option | usage message from the argument parser | 2 |
 
-## Development
+## Contributing
 
-```bash
-cargo test      # run the tests
-cargo clippy    # lint
-cargo fmt       # format (2-space indent, see rustfmt.toml)
-cargo run -- "Hello, world!" --seed 42
-```
-
-The code is split into small modules:
-
-| File | Responsibility |
-| --- | --- |
-| `src/main.rs` | Argument parsing, error output and exit codes, printing JSON |
-| `src/phrase.rs` | Validating and cleaning the phrase |
-| `src/mapping.rs` | Building the random letter mapping |
-| `src/cipher.rs` | Applying the mapping and building the key |
+Bug reports and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md)
+for how to build, test and release the project.
 
 ## License
 
