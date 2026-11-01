@@ -21,3 +21,7 @@ install-updater = false
 tap = "bojectify/homebrew-tap"
 # Publish jobs to run in CI
 publish-jobs = ["homebrew"]
+
+# GitHub retires the macos-14 runner image on 2026-11-02 (dist 0.32 defaults to it)
+[dist.github-custom-runners]
+aarch64-apple-darwin = "macos-15"
