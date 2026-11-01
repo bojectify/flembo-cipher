@@ -12,16 +12,33 @@ $ flembo-cipher "Hello, world!" --seed 42
 
 ## Installation
 
+### Homebrew (macOS and Linux)
+
+```bash
+brew install bojectify/tap/flembo-cipher
+```
+
+### Shell installer (macOS and Linux)
+
+```bash
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/bojectify/flembo-cipher/releases/latest/download/flembo-cipher-installer.sh | sh
+```
+
+### PowerShell installer (Windows)
+
+```powershell
+powershell -ExecutionPolicy Bypass -c "irm https://github.com/bojectify/flembo-cipher/releases/latest/download/flembo-cipher-installer.ps1 | iex"
+```
+
+Prebuilt binaries for every platform are also attached to each
+[GitHub release](https://github.com/bojectify/flembo-cipher/releases).
+
+### From source
+
 You'll need [Rust](https://rustup.rs) (edition 2024).
 
 ```bash
-# From GitHub
 cargo install --git https://github.com/bojectify/flembo-cipher
-
-# Or from a local clone
-git clone git@github.com:bojectify/flembo-cipher.git
-cd flembo-cipher
-cargo install --path .
 ```
 
 ## Usage
