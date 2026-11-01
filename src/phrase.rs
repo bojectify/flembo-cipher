@@ -1,8 +1,22 @@
+use std::fmt;
+
 #[derive(Debug, PartialEq)]
 pub enum PhraseError {
   InvalidChar(char),
   NoWords,
   TooLong { length: usize, max: usize },
+}
+
+impl fmt::Display for PhraseError {
+  fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+    match self {
+      PhraseError::InvalidChar(c) => write!(f, "invalid character: {c}"),
+      PhraseError::NoWords => write!(f, "no words found"),
+      PhraseError::TooLong { length, max } => {
+        write!(f, "phrase is too long: {length} (max {max})")
+      }
+    }
+  }
 }
 
 pub fn clean(phrase: &str, max_length: usize) -> Result<String, PhraseError> {
