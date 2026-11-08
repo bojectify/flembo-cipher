@@ -97,6 +97,9 @@ The last two letters of a word give a lot away.
 ## 9. Vowels
 
 - Every word has a vowel (A, E, I, O, U) or a Y.
+- Words with no vowel almost always use Y instead. Common ones: **MY, BY, FLY,
+  WHY, TRY, SKY, DRY, SHY, CRY, SPY, GYM, MYTH, RHYTHM**. A short word with no
+  other likely vowel probably has Y in it, often at the end.
 - A letter that sits next to many different letters is probably a vowel.
 - Letters that only appear next to the same few letters are probably
   consonants.
