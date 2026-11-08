@@ -66,6 +66,19 @@ letter. Words with repeated letters have few possible answers.
 | A B C D C | THERE, WHERE |
 | A B C A D B | PEOPLE |
 | A B B C | BOOK, FEET, TOOK |
+| A B A | DID, DAD, EYE, MUM, POP, NUN, EVE, GIG, TOT |
+| A B A C | EVEN, EVER, EYES, AWAY, ALAS |
+| A B A C D | EVERY, EVENT, AGAIN, AWAKE, AWARE, ALARM, AMAZE, ERECT |
+| A B A C A D | ELEVEN |
+| A B A C A D E | ELEMENT |
+| A B A C D C E | EVENING |
+| A B A C D E F G | ELEPHANT |
+
+- A word that starts with the same letter in first and third place
+  (`x y x…`) very likely starts with **E** (EVERY, EVEN, ELEVEN, ELEPHANT) or
+  **A** (AGAIN, AWAY, AWARE).
+- The same shape inside a word is common too, but gives less away:
+  n**EVE**r, s**EVE**n, l**EVE**l, b**ANA**na, p**ARA**de.
 
 A word with no repeated letters matches thousands of words, so leave it until
 you have some of its letters.
